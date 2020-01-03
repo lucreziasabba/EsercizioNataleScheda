@@ -10,7 +10,7 @@ namespace Esercizio
             Console.WriteLine(a);//2.147.483.647 perchè il MaxValue di un int è 2^31-1;
             if (a != int.MaxValue)
             {
-                Console.WriteLine(a + 1); //trovandosi un overflow stampa l'opposto sommando 1 (-2^31);
+                Console.WriteLine(a + 1); //trovandosi un overflow stampa l'opposto sommando 1 (-2^31); 
             }
             int b = -128;//b vale -128;
             int c = -b;//c vale l'opposto di b;
