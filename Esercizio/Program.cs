@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Esercizio
 {
@@ -12,11 +8,14 @@ namespace Esercizio
         {
             int a = int.MaxValue;
             Console.WriteLine(a);//2.147.483.647 perchè il MaxValue di un int è 2^31-1;
-            Console.WriteLine(a + 1);//trovandosi un overflow stampa l'opposto sommando 1 (-2^31);
-            int b = -128;
-            int c = -b;
-            Console.WriteLine(Convert.ToString(b, 2));
-            Console.WriteLine(Convert.ToString(c, 2));
+            if (a != int.MaxValue)
+            {
+                Console.WriteLine(a + 1); //trovandosi un overflow stampa l'opposto sommando 1 (-2^31);
+            }
+            int b = -128;//b vale -128;
+            int c = -b;//c vale l'opposto di b;
+            Console.WriteLine(Convert.ToString(b, 2));//b viene convertita da decimale a binario;
+            Console.WriteLine(Convert.ToString(c, 2));//c viene convertita da decimale a binario;
             int value = 31;
             int somma = value;
             value = ~value + 1;
