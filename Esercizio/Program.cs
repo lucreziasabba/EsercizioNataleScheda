@@ -8,7 +8,7 @@ namespace Esercizio
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             int a = int.MaxValue;
             Console.WriteLine(a);
