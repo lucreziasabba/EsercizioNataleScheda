@@ -16,12 +16,13 @@ namespace Esercizio
             int c = -b;//c vale l'opposto di b;
             Console.WriteLine(Convert.ToString(b, 2));//b viene convertita da decimale a binario;
             Console.WriteLine(Convert.ToString(c, 2));//c viene convertita da decimale a binario;
-            int value = 31;
+            Console.WriteLine("Inserisci un numero: ");
+            int value = int.Parse(Console.ReadLine());
             int somma = value;
             value = ~value + 1;
             //value = value + 1;
             somma = somma + value;
-            Console.WriteLine($"{value} e {somma}");
+            Console.WriteLine($"{value} è un valore opposto a quello inserito e {somma} è la somma tra il valore inserito e quello opposto");
             long number = 55555;
             Console.WriteLine(Convert.ToString(number, 2));
             short number1 = (short)number;
