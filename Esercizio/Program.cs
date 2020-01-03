@@ -24,9 +24,10 @@ namespace Esercizio
             somma = somma + value;
             Console.WriteLine($"{value} è un valore opposto a quello inserito e {somma} è la somma tra il valore inserito e quello opposto");
             long number = 55555;
-            Console.WriteLine(Convert.ToString(number, 2));
-            short number1 = (short)number;
-            Console.WriteLine(number1);
+            Console.WriteLine(Convert.ToString(number, 2));//si converte number in binario;
+            short number1 = (short)number;//si cambia il tipo di variabile da long a short;
+            Console.WriteLine(number1);//si stampa number1, ma è errato perchè le variabili short vanno da da -32,768 a 32,767 quindi va in overflow.
+            Console.ReadLine();
         }
     }
 }
